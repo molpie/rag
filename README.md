@@ -1,6 +1,6 @@
 # RAG (Random Address Generator)
 
-Il software in Pyton genera un un file  CSV di 100000 righe, che utilizza come separatore delle stringhe i doppi apici, composto da strighe casuali rappresentanti i campi cognome, nome, indirizzo, città, cap e numero di telefono. Il numero di telefono a volte può contenere il prefisso internazionale e a volte no.
+Il software in Python genera un un file  CSV di 100000 righe, che utilizza come separatore delle stringhe i doppi apici, composto da strighe casuali rappresentanti i campi cognome, nome, indirizzo, città, cap e numero di telefono. Il numero di telefono a volte può contenere il prefisso internazionale e a volte no.
 
 pip freeze > requirements.txt per salvare le librerie necessarie.
 
