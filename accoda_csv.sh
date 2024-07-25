@@ -27,7 +27,7 @@ for i in $(seq 1 $num_appends); do
     tail -n +2 "$input_file" >> "$output_file"
     
     # Mostra il progresso ogni 100 iterazioni
-    if [ $((i % 100)) -eq 0 ]; then
+    if [ $((i % 10)) -eq 0 ]; then
         echo "$((i * input_rows)) righe accodate"
     fi
 done
