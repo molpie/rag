@@ -27,11 +27,10 @@ def generate_phone_number():
         return number
 
 # Nome del file CSV da generare
-output_file = 'large_dataset.csv'
+output_file = 'demo_dataset.csv'
 
 # Numero di righe da generare
-#num_rows = 1024000000
-num_rows = 1024
+num_rows = 1000
 
 # Genera il file CSV
 with open(output_file, 'w', newline='', encoding='utf-8') as csvfile:

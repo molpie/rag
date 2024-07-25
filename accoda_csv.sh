@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Nome del file CSV di origine
-input_file="large_dataset.csv"
+input_file="demo_dataset.csv"
 
 # Nome del file CSV di destinazione
-output_file="large_dataset_accumulated.csv"
+output_file="large_dataset.csv"
 
 # Numero di volte da accodare il file a se stesso
 #num_appends=1000000

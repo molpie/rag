@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Nome del file di input
-input_file="large_dataset_accumulated.csv"
+input_file="large_dataset.csv"
 
 # Nome del file di output per i dati modificati
-modified_file="modified_dataset.csv"
+modified_file="modified_large_dataset.csv"
 
 # Nome del file di output per i numeri di telefono internazionali
-phones_file="international_phones.txt"
+phones_file="international_phones.csv"
 
 # Controlla se il file di input esiste
 if [ ! -f "$input_file" ]; then
