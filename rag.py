@@ -30,7 +30,7 @@ def generate_phone_number():
 output_file = 'demo_dataset.csv'
 
 # Numero di righe da generare
-num_rows = 1000
+num_rows = 100000
 
 # Genera il file CSV
 with open(output_file, 'w', newline='', encoding='utf-8') as csvfile:
@@ -50,8 +50,8 @@ with open(output_file, 'w', newline='', encoding='utf-8') as csvfile:
         # Scrive la riga con i campi correttamente racchiusi in doppi apici
         writer.writerow([cognome, nome, indirizzo, citta, cap, numero_telefono])
         
-        # Mostra il progresso ogni 100000 righe
-        if (i + 1) % 100000 == 0:
+        # Mostra il progresso ogni 10000 righe
+        if (i + 1) % 10000 == 0:
             print(f"{i + 1} righe generate")
 
 print("Generazione completata.")
