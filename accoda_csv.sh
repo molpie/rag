@@ -7,7 +7,6 @@ input_file="demo_dataset.csv"
 output_file="large_dataset.csv"
 
 # Numero di volte da accodare il file a se stesso
-#num_appends=1000000
 num_appends=10
 
 # Crea (o svuota) il file di destinazione
@@ -26,7 +25,7 @@ for i in $(seq 1 $num_appends); do
     tail -n +2 "$input_file" >> "$output_file"
     
     # Mostra il progresso ogni 100000 righe accodate
-    if [ $((i % 100)) -eq 0 ]; then
+    if [ $((i % 10)) -eq 0 ]; then
         echo "$((i * 100000)) righe accodate"
     fi
 done
