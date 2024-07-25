@@ -2,12 +2,14 @@
 
 # Nome del file CSV di origine
 input_file="demo_dataset.csv"
+input_rows=$(cat $input_file | wc -l)
+input_rows=$((input_rows - 1))
 
 # Nome del file CSV di destinazione
 output_file="large_dataset.csv"
 
 # Numero di volte da accodare il file a se stesso
-num_appends=10
+num_appends=130
 
 # Crea (o svuota) il file di destinazione
 > "$output_file"
@@ -24,9 +26,9 @@ for i in $(seq 1 $num_appends); do
     # Aggiungi i dati senza intestazione
     tail -n +2 "$input_file" >> "$output_file"
     
-    # Mostra il progresso ogni 100000 righe accodate
-    if [ $((i % 10)) -eq 0 ]; then
-        echo "$((i * 100000)) righe accodate"
+    # Mostra il progresso ogni 100 iterazioni
+    if [ $((i % 100)) -eq 0 ]; then
+        echo "$((i * input_rows)) righe accodate"
     fi
 done
 
